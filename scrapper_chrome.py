@@ -2,9 +2,9 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 import time
 
-PROFILE_PATH = "C:/Users/Siddharth/AppData/Local/Google/Chrome"
+PROFILE_PATH = "C:/Users/abc/AppData/Local/Google/Chrome"
 EXECUTABLE_PATH = "C:/Program Files (x86)/Google/Chrome/Application"
-DRIVER_PATH = "C:/Users/Siddharth/Desktop/chromedriver.exe"
+DRIVER_PATH = "C:/Users/abc/Desktop/chromedriver.exe"
 
 #Google Chrome initialization
 options = webdriver.ChromeOptions()
@@ -43,7 +43,7 @@ for i, d in enumerate(temp):
         print("exception at line", i)
 
 #Saving the output
-f2 = open(r"C:\Users\Siddharth\Desktop\Whatsapp Chat Scrapper\netflix_tv_shows(chrome).txt","w")        
+f2 = open(r"C:\Users\abc\Desktop\scrapper\netflix_tv_shows(chrome).txt","w")        
 for d in final_chat:
     f2.write(str(d)+'\n')
     
