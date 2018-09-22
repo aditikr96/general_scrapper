@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 #Get HTML Source
-file_path = r"C:\Users\abc\Desktop\Whatsapp Chat Scrapper\netflix_tv_shows.html"
+file_path = r"C:\Users\abc\Desktop\scrapper\netflix_tv_shows.html"
 f = open(file_path, "r")
 html_source = f.read()
 f.close()
@@ -22,7 +22,7 @@ for i, d in enumerate(temp):
     except:
         print("exception at line", i)
 
-f2 = open(r"C:\Users\abc\Desktop\Whatsapp Chat Scrapper\netflix_tv_shows.txt","w")        
+f2 = open(r"C:\Users\abc\Desktop\scrapper\netflix_tv_shows.txt","w")        
 for d in final_chat:
     f2.write(str(d)+'\n')
     
